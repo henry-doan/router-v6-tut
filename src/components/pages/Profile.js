@@ -8,7 +8,9 @@ const Profile = () => {
     <>
       <h1>{username} Profile Page</h1>
       <br />
-      <button onClick={() => navigate('/about')}>
+      {/* <button onClick={() => navigate('/about')}> */}
+      {/* anything is passed into turns into string */}
+      <button onClick={() => navigate('/about', { state: {name: "bob", age: 23, email: 'bob@email.com'} })}>
         {/* replaces the link than redirect */}
       {/* <button onClick={() => navigate('/about', { replace: true })}> */}
       {/* <button onClick={() => navigate('/about', replace )}> */}
